@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home"
+            android:title="Go Mall" />
+        <item
+            android:id="@+id/menu_orders"
+            android:icon="@drawable/ic_orders"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/menu_rewards"
+            android:icon="@drawable/rewards"
+            android:title="My Rewards" />
+        <item
+            android:id="@+id/menu_cart"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/menu_wishlist"
+            android:icon="@drawable/ic_wishlist"
+            android:title="My Wishlist" />
+
+        <item
+            android:id="@+id/menu_account"
+            android:icon="@drawable/ic_account"
+            android:title="My Account" />
+    </group>
+
+    <item
+        android:id="@+id/menu_signout"
+        android:icon="@drawable/ic_signout"
+        android:title="Sign Out" />
+
+
+</menu>

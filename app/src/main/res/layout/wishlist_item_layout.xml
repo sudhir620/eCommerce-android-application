@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:elevation="3dp"
+    android:layout_marginBottom="1dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/product_image_wl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mobilephoneone" />
+
+    <TextView
+        android:id="@+id/product_title_wl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Iphone 6 (Black)"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/product_image_wl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coupen_icon_wl"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:tint="#8000FF"
+        app:layout_constraintBottom_toBottomOf="@+id/free_coupen_wl"
+        app:layout_constraintStart_toStartOf="@+id/product_title_wl"
+        app:layout_constraintTop_toTopOf="@+id/free_coupen_wl"
+        app:srcCompat="@drawable/coupen" />
+
+    <TextView
+        android:id="@+id/free_coupen_wl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="free coupen"
+        android:textColor="#8000FF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/coupen_icon_wl"
+        app:layout_constraintTop_toBottomOf="@+id/product_title_wl" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="#07EA10"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/product_image_wl"
+        app:layout_constraintTop_toBottomOf="@+id/free_coupen_wl">
+
+        <TextView
+            android:id="@+id/tv_product_rating_miniview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="4.5"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:gravity="center"
+            android:src="@drawable/ic_baseline_star_24"
+            app:tint="@color/colorAccent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_rating_wl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="(27) rating"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/free_coupen_wl" />
+
+    <TextView
+        android:id="@+id/product_price_wl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rs.49999/-"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/cutted_price_wl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Rs.59999/-"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/product_price_wl"
+        app:layout_constraintStart_toEndOf="@+id/product_price_wl" />
+
+    <TextView
+        android:id="@+id/payment_method_wl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cash on delivery available"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/product_price_wl"
+        app:layout_constraintTop_toBottomOf="@+id/product_price_wl" />
+
+    <ImageButton
+        android:id="@+id/delete_btn_wl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bin" />
+
+    <View
+        android:id="@+id/price_cut"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/recyclerViewBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/cutted_price_wl"
+        app:layout_constraintEnd_toEndOf="@+id/cutted_price_wl"
+        app:layout_constraintStart_toStartOf="@+id/cutted_price_wl"
+        app:layout_constraintTop_toTopOf="@+id/cutted_price_wl" />
+</androidx.constraintlayout.widget.ConstraintLayout>

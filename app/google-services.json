@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "312463741703",
+    "project_id": "go-mall-c63ae",
+    "storage_bucket": "go-mall-c63ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312463741703:android:ba57ac9c1b7d0d9a27aba2",
+        "android_client_info": {
+          "package_name": "com.skcoder.gomall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312463741703-qoqlmqgpqpk4ftmngri2jo2orvsl2b1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2lDA6bs85M6gC0Kp0QzPq3mJ1snfYVz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312463741703-qoqlmqgpqpk4ftmngri2jo2orvsl2b1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
